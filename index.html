@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Codes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- View 1: Topics List -->
+        <main id="home-view" class="view active">
+            <header class="main-header">
+                <h1>C Programming Codes</h1>
+                <p class="subtitle">Select a topic to practice Programs</p>
+            </header>
+            <div id="topic-list" class="topic-list">
+                <!-- Javascript will populate this -->
+            </div>
+        </main>
+
+        <!-- View 2: Programs List (Sub-topic) -->
+        <main id="program-list-view" class="view">
+            <header class="detail-header">
+                <button id="back-to-home-btn" class="icon-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </button>
+                <h2 id="topic-title">Programs </h2>
+            </header>
+            <div id="program-list" class="topic-list">
+                <!-- Javascript will populate this -->
+            </div>
+        </main>
+
+        <!-- View 3: Program Detail -->
+        <main id="detail-view" class="view">
+            <header class="detail-header">
+                <button id="back-to-list-btn" class="icon-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </button>
+                <h2 id="program-title">Program Title</h2>
+            </header>
+
+            <div id="content-area" class="content-area">
+                <!-- Javascript will populate this -->
+            </div>
+
+            <nav class="navigation-bar">
+                <button id="prev-btn" class="nav-btn">Prev</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+            </nav>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
